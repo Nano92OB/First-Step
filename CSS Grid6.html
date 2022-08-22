@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+       body{    display: grid;
+                grid-template-columns:1fr 2fr 1fr ;
+                grid-template-rows: 1fr 2fr 2fr;
+                height: 600px;
+                width: 800px;
+                
+                
+       }
+       header{
+                grid-column: 1/4;
+                grid-row: 1/2;
+                background-color: skyblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+
+                
+       }
+       #left{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                background-color: orangered;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+       }
+       main{
+                grid-column: 2/3;
+                grid-row: 2/3;
+                background-color: green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+       }
+       #right{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                background-color: yellow;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+       }
+       footer#contenedor{
+                grid-column: 1/4;
+                grid-row: 3/4;
+                background-color: violet;
+                display: flex;
+                align-items:center ;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding:10px;
+                gap: 10px;
+                
+       }
+       div{
+        background-color: orangered;
+        width:60%;
+        height:60%;
+       }
+       footer>div{
+        display: flex;
+                align-items: center;
+                justify-content: center;
+       }
+      
+    </style>
+
+</head>
+<body>
+    <header>Header</header>
+    <aside id="left">Left Sidebar</aside>
+    <main>Main Content</main>
+    <aside id="right">Right Sidebar</aside>
+    <footer id="contenedor">
+        <div>Footer1</div>
+        <div>Footer2</div>
+        <div>Footer3</div>
+        <div>Footer4</div>
+    </footer>
+</body>
+</html>

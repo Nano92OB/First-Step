@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        #header {
+            grid-area: header;
+            border: 10px white solid;
+            padding: 10px;
+        }
+        #nav {
+            grid-area: nav;
+            border: 10px white solid;
+            padding: 10px;
+        }
+        #article {
+            grid-area: article;
+            border: 10px white solid;
+            padding: 10px;
+
+        }
+        #adds {
+            grid-area: adds;
+            border: 10px white solid;
+            padding: 10px;
+        }
+        #footer {
+            grid-area: footer;
+            border: 10px white solid;
+            padding: 10px;
+        }
+      #contenedor {
+        display: grid;
+        grid-template-areas:
+        'header header header'
+        'nav article adds'
+        'nav footer footer';
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows:100px 1fr 100px;
+        background-color: yellow;
+        color: black;
+        height: 500px; 
+        text-decoration: overline;   
+      }
+
+    </style>
+</head>
+
+<body>
+
+  <main id="contenedor">
+      <div id="header">Header</div>
+      <div id="nav">Nav</div>
+      <div id="article">Article</div>
+      <div id="adds">Adds</div>
+      <div id="footer">Footer</div>
+ </main> 
+
+</body>
+</html>

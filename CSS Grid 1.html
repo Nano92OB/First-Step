@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        html , body{
+            height: 100%;
+        }
+        body{
+            display: grid;
+            grid-template-areas: 'header header'
+                                  'sidebar main'
+                                  'sidebar extra'
+                                  'footer footer';
+            grid-template-rows: 1fr 6fr 1fr 1fr;
+            grid-template-columns: 1fr 4fr;
+            height: 550px;
+            gap: 7px;   
+            padding: 3%;
+            text-align: center;
+            color: white;               
+
+        }
+        header{
+            background-color: aquamarine;
+            grid-area: header;
+        }
+        aside{
+            background-color: rgb(82, 207, 24);
+            grid-area: sidebar;
+        }
+        main{
+            background-color: yellow;
+            grid-area: main;
+        }
+        section{
+            background-color: gray;
+            grid-area: extra;
+        }
+        footer{
+            background-color: orangered;
+            grid-area: footer;
+        }
+        
+    </style>
+    <body>
+        <header>Header</header>
+        <main>Main Content</main>
+        <aside>Sidebar</aside>
+        <section>Extra Content</section>
+        <footer>Footer</footer>
+    </body>
+</html>

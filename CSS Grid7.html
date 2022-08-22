@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 20% 30% 10% 20% 20%;
+            grid-template-rows:15% 40% 30% 15% ;
+            height: 600px;
+            width: 1300px;
+            row-gap: 5px;
+            column-gap: 5px;
+            color: white;
+            font-size: 20px;
+        }
+        header{
+            grid-column: 1/6;
+            grid-row: 1/2;
+            background-color: skyblue;
+            display: flex;
+            align-items: center;
+        }
+        main{
+            grid-column: 2/4;
+            grid-row: 2/3;
+            background-color: green;
+            display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+        aside{
+            grid-column: 4/5;
+            grid-row: 2/3;
+            background-color: violet;
+            display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+        article{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            background-color: orangered;
+            display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+        div{
+            grid-column: 3/5;
+            grid-row: 3/4;
+            background-color: orangered;
+            display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+        footer{
+            grid-column: 1/6;
+            grid-row: 4/5;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <header>.header</header>
+    <main>.main</main>
+    <aside>.sidebar</aside>
+    <article>.twin</article>
+    <div>.twin</div>
+    <footer>.footer</footer>
+</body>
+</html>

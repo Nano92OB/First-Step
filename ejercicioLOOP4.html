@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alturas = [];
+        for($i=0; $i<5; $i++){
+            let altura = solicitar_altura();
+            alturas.push(altura);
+        }
+        console.log("A continuación figuran las alturas ingresadas:");
+        console.log(alturas);
+        let promedio = calcular_promedio_array(alturas);
+        console.log("El promedio de los valores ingresados es: " + promedio);
+
+        /* Aqui defino las funciones */
+        
+        function solicitar_altura(){
+            let altura = prompt("Por favor ingrese una altura");
+            altura = parseInt(altura);
+            return altura;
+        }
+
+        function calcular_promedio_array(array){
+            let promedio = 0;
+            let suma_total = 0;
+            let cantidad_total = array.length;
+            let i = 0;
+            while(i < cantidad_total){
+                suma_total += array[i];
+                i++;
+            }
+            console.log("La suma total de los valores ingresados es: " + suma_total);
+            promedio = suma_total / cantidad_total;
+            return promedio;
+        }
+    </script>
+</body>
+</html>
